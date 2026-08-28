@@ -1,0 +1,24 @@
+title: رایبُن | Raybon
+description: سیستم‌عامل و راهکارهای نرم‌افزاری برای محصولاتی که قرار است متفاوت باشند.
+url: https://raybone.ir
+baseurl: ""
+lang: fa
+timezone: Asia/Tehran
+markdown: kramdown
+permalink: /blog/:title/
+collections:
+  knowledge:
+    output: true
+    permalink: /knowledge/:name/
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: knowledge
+    values:
+      layout: knowledge
+exclude: [README.md]

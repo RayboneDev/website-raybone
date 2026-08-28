@@ -1,0 +1,5 @@
+---
+layout: default
+title: یادداشت‌های رایبُن
+---
+<main class="article-shell"><a class="back" href="{{ '/' | relative_url }}">← بازگشت به رایبُن</a><h1>یادداشت‌های رایبُن</h1>{% for post in site.posts %}<article class="post-card" style="margin:20px 0"><span>{{ post.date | date: "%d %B %Y" }}</span><h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2><p>{{ post.excerpt }}</p></article>{% endfor %}</main>
