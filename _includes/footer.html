@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand"><a class="brand" href="{{ home_url | relative_url }}"><span class="brand-mark">R</span><span dir="ltr">Raybone</span></a><p>{{ t.footer_description }}</p></div>
+    <div><h2>{{ t.products }}</h2><a href="{{ home_url | relative_url }}#products">{{ t.custom_os }}</a><a href="{{ home_url | relative_url }}#device-management">{{ t.device_management }}</a><a href="{{ home_url | relative_url }}#enterprise-mobility">{{ t.enterprise }}</a><a href="{{ home_url | relative_url }}#platform-services">{{ t.platform }}</a><a href="{{ home_url | relative_url }}#applications">{{ t.applications }}</a></div>
+    <div><h2>{{ t.industries }}</h2>{% for item in site.data.design.products limit: 5 %}<a href="{{ home_url | relative_url }}#industry-{{ item.art }}">{{ item.description[current_lang] }}</a>{% endfor %}</div>
+    <div><h2>{{ t.company }}</h2><a href="{{ home_url | relative_url }}#about">{{ t.about }}</a><a href="{{ home_url | relative_url }}#about">{{ t.team }}</a><a href="mailto:info@raybone.ir?subject=Careers">{{ t.careers }}</a><a href="mailto:info@raybone.ir?subject=Collaboration">{{ t.collaborate }}</a><a href="{{ home_url | append: 'blog/' | relative_url }}">{{ t.blog }}</a><a href="{{ home_url | append: 'knowledge/' | relative_url }}">{{ t.knowledge }}</a></div>
+    <div><h2>{{ t.contact }}</h2><p>{{ t.location }}</p><a dir="ltr" href="tel:+982191000000">021-9100-0000</a><a dir="ltr" href="mailto:info@raybone.ir">info@raybone.ir</a><a dir="ltr" href="{{ home_url | relative_url }}">www.raybone.ir</a></div>
+  </div>
+  <div class="wrap copyright">© {{ site.time | date: '%Y' }} Raybone. {{ t.rights }}</div>
+</footer>

@@ -1,5 +1,5 @@
-title: رایبُن | Raybon
-description: سیستم‌عامل و راهکارهای نرم‌افزاری برای محصولاتی که قرار است متفاوت باشند.
+title: رایبُن | Raybone
+description: توسعه و سفارشی‌سازی سیستم‌عامل و نرم‌افزار پایه دستگاه متناسب با سخت‌افزار، کاربرد و مدل کسب‌وکار شما.
 url: https://raybone.ir
 baseurl: ""
 lang: fa
@@ -16,9 +16,13 @@ defaults:
       type: posts
     values:
       layout: post
+      lang: fa
+      section: blog
   - scope:
       path: ""
       type: knowledge
     values:
       layout: knowledge
-exclude: [README.md]
+      lang: fa
+      section: knowledge
+exclude: [README.md, AGENTS.md, justfile, vendor/, scripts/]

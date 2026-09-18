@@ -1,0 +1,264 @@
+{
+  "products": [
+    {
+      "title": "Mobile",
+      "description": {
+        "fa": "موبایل و تبلت",
+        "en": "Phones and tablets"
+      },
+      "icon": "mobile",
+      "art": "mobile"
+    },
+    {
+      "title": "Payment",
+      "description": {
+        "fa": "پرداخت و POS",
+        "en": "Payments and POS"
+      },
+      "icon": "payment",
+      "art": "payment"
+    },
+    {
+      "title": "Industrial",
+      "description": {
+        "fa": "تجهیزات صنعتی",
+        "en": "Industrial equipment"
+      },
+      "icon": "industrial",
+      "art": "industrial"
+    },
+    {
+      "title": "Smart Devices",
+      "description": {
+        "fa": "دستگاه‌های هوشمند",
+        "en": "Smart devices"
+      },
+      "icon": "bulb",
+      "art": "smart"
+    },
+    {
+      "title": "Kiosk & Terminal",
+      "description": {
+        "fa": "کیوسک و ترمینال",
+        "en": "Kiosks and terminals"
+      },
+      "icon": "mobile",
+      "art": "kiosk"
+    },
+    {
+      "title": "Display",
+      "description": {
+        "fa": "نمایشگر و Signage",
+        "en": "Displays and signage"
+      },
+      "icon": "display",
+      "art": "display"
+    },
+    {
+      "title": "Enterprise",
+      "description": {
+        "fa": "تجهیزات سازمانی",
+        "en": "Enterprise devices"
+      },
+      "icon": "document",
+      "art": "enterprise"
+    },
+    {
+      "title": "Embedded",
+      "description": {
+        "fa": "محصولات Embedded",
+        "en": "Embedded products"
+      },
+      "icon": "chip",
+      "art": "embedded"
+    }
+  ],
+  "engineering": [
+    {
+      "title": "Board Integration",
+      "description": {
+        "fa": "راه‌اندازی و یکپارچه‌سازی سخت‌افزار",
+        "en": "Hardware bring-up and integration"
+      },
+      "icon": "branch"
+    },
+    {
+      "title": "System Customization",
+      "description": {
+        "fa": "سفارشی‌سازی سیستم‌عامل و فریم‌ورک",
+        "en": "Operating system and framework customization"
+      },
+      "icon": "sun"
+    },
+    {
+      "title": "System Applications",
+      "description": {
+        "fa": "اپلیکیشن‌های سیستمی و تجربه کاربری",
+        "en": "System applications and user experience"
+      },
+      "icon": "grid"
+    },
+    {
+      "title": "Security",
+      "description": {
+        "fa": "امنیت سیستم‌عامل و سیاست‌های دسترسی",
+        "en": "Operating system security and access policies"
+      },
+      "icon": "shield"
+    },
+    {
+      "title": "OTA & Lifecycle",
+      "description": {
+        "fa": "به‌روزرسانی، نگهداری و مدیریت چرخه عمر",
+        "en": "Updates, maintenance and lifecycle management"
+      },
+      "icon": "refresh"
+    }
+  ],
+  "fleet": [
+    {
+      "title": "MDM / EMM",
+      "icon": "mobile"
+    },
+    {
+      "title": "Remote Configuration",
+      "icon": "document"
+    },
+    {
+      "title": "Kiosk Mode & Lockdown",
+      "icon": "lock"
+    },
+    {
+      "title": "Monitoring & Analytics",
+      "icon": "chart"
+    },
+    {
+      "title": "Apps & Policy Management",
+      "icon": "check"
+    }
+  ],
+  "services": [
+    {
+      "title": "Enterprise Mobility",
+      "description": {
+        "fa": "راهکارهای موبایل سازمانی، سفارشی‌سازی، امنیت و مدیریت تجهیزات سازمان.",
+        "en": "Enterprise mobile solutions, customization, security and device management."
+      },
+      "icon": "mobile",
+      "art": "mobility",
+      "id": "enterprise-mobility"
+    },
+    {
+      "title": "Enterprise Communications",
+      "description": {
+        "fa": "راهکارهای ارتباطی امن و اختصاصی VoIP، Push-to-Talk و Messaging سازمانی.",
+        "en": "Secure, dedicated VoIP, push-to-talk and enterprise messaging."
+      },
+      "icon": "mobile",
+      "art": "communications",
+      "id": "enterprise-communications"
+    },
+    {
+      "title": "Platform Services",
+      "description": {
+        "fa": "سرویس‌های پایه موردنیاز محصولات متصل: Push، Auth، Config، Device Registry و APIها.",
+        "en": "Core services for connected products: push, authentication, configuration, device registry and APIs."
+      },
+      "icon": "cloud",
+      "art": "platform",
+      "id": "platform-services"
+    },
+    {
+      "title": "Private Infrastructure",
+      "description": {
+        "fa": "زیرساخت ابری خصوصی برای ذخیره‌سازی، فایل، کاربران و همکاری تیمی روی زیرساخت خود شما.",
+        "en": "Private cloud for storage, files, users and team collaboration on your own infrastructure."
+      },
+      "icon": "cloud",
+      "art": "infrastructure",
+      "id": "private-infrastructure"
+    },
+    {
+      "title": "Applications",
+      "description": {
+        "fa": "توسعه اپلیکیشن‌های سیستمی، سازمانی و محصول‌محور برای موبایل، وب و دسکتاپ.",
+        "en": "System, enterprise and product applications for mobile, web and desktop."
+      },
+      "icon": "grid",
+      "art": "applications",
+      "id": "applications"
+    },
+    {
+      "title": "Custom Platforms",
+      "description": {
+        "fa": "طراحی و توسعه پلتفرم‌های اختصاصی برای محصولاتی که راهکار آماده ندارند.",
+        "en": "Purpose-built platforms for products that need more than an off-the-shelf solution."
+      },
+      "icon": "document",
+      "art": "custom",
+      "id": "custom-platforms"
+    }
+  ],
+  "why": [
+    {
+      "title": "",
+      "description": {
+        "fa": "سال‌ها تجربه در توسعه سیستم‌عامل برای دستگاه‌های متنوع و پیچیده.",
+        "en": "Years of experience developing operating systems for diverse, complex devices."
+      },
+      "icon": "branch",
+      "heading": {
+        "fa": "تخصص عمیق",
+        "en": "Deep expertise"
+      }
+    },
+    {
+      "title": "",
+      "description": {
+        "fa": "از سفارشی‌سازی جزئی تا طراحی سیستم‌عامل اختصاصی.",
+        "en": "From focused customizations to a dedicated operating system."
+      },
+      "icon": "branch",
+      "heading": {
+        "fa": "انعطاف‌پذیری",
+        "en": "Flexibility"
+      }
+    },
+    {
+      "title": "",
+      "description": {
+        "fa": "امنیت از لایه‌های سیستم تا سرویس‌ها و ارتباطات.",
+        "en": "Security across system layers, services and communications."
+      },
+      "icon": "shield",
+      "heading": {
+        "fa": "امنیت در طراحی",
+        "en": "Security by design"
+      }
+    },
+    {
+      "title": "",
+      "description": {
+        "fa": "همراه محصول شما در تمام مراحل توسعه و چرخه عمر محصول.",
+        "en": "Alongside your product through development and its entire lifecycle."
+      },
+      "icon": "refresh",
+      "heading": {
+        "fa": "پشتیبانی بلندمدت",
+        "en": "Long-term support"
+      }
+    },
+    {
+      "title": "",
+      "description": {
+        "fa": "استفاده از قدرت متن‌باز برای ساخت راهکارهای پایدار و مستقل.",
+        "en": "Using open source to build sustainable, independent solutions."
+      },
+      "icon": "shield",
+      "heading": {
+        "fa": "متن‌باز و استاندارد",
+        "en": "Open source and standards"
+      }
+    }
+  ]
+}

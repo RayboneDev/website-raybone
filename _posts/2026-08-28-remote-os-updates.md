@@ -4,6 +4,12 @@ date: 2026-08-28
 author: تیم رایبُن
 excerpt: چرا به‌روزرسانی از راه دور برای محصولات متصل و دستگاه‌های اختصاصی اهمیت دارد؟
 canonical_url: https://virgool.io/@mrazian/%D8%A8%D9%87-%D8%B1%D9%88%D8%B2%D8%B1%D8%B3%D8%A7%D9%86%DB%8C-%D8%B3%DB%8C%D8%B3%D8%AA%D9%85-%D8%B9%D8%A7%D9%85%D9%84-%D8%A7%D8%B2-%D8%B1%D8%A7%D9%87-%D8%AF%D9%88%D8%B1-ifoswhvettrk
+lang: fa
+section: blog
+title_en: Remote operating system updates
+excerpt_en: Why do over-the-air updates matter for connected products and dedicated
+  devices?
+translation_url: /en/blog/remote-os-updates/
 ---
 
 به‌روزرسانی سیستم‌عامل از راه دور (OTA) یکی از اجزای مهم چرخه‌ عمر محصولات دیجیتال است. وقتی دستگاه‌ها در اختیار کاربران یا در نقاط مختلف جغرافیایی قرار دارند، اصلاح آسیب‌پذیری‌ها، بهبود عملکرد و اضافه‌کردن قابلیت‌های جدید نباید به مراجعه حضوری وابسته باشد.

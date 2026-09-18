@@ -1,0 +1,38 @@
+---
+layout: default
+---
+{% include locale.html %}
+<main id="main">
+  <section class="hero dark">
+    <div class="wrap split hero-inner">
+      <div class="hero-copy"><h1>{{ t.hero_title }}</h1><p class="lead">{{ t.hero_description }}</p><p class="technologies" dir="ltr">Android / AOSP / Linux</p><div class="hero-actions"><a class="button" href="#contact">{{ t.start }}</a><a class="intro-link" href="#products"><span aria-hidden="true">↓</span> {{ t.intro }}</a></div></div>
+      {% include artwork.html name='hero' alt=t.hero_alt %}
+    </div>
+  </section>
+  <section class="section wrap industries" id="industries">
+    <h2 class="centered">{{ t.industries_title }}</h2>
+    <div class="product-grid">{% for item in site.data.design.products %}<a class="product-card" id="industry-{{ item.art }}" href="#contact">{% include icon.html name=item.icon %}<h3 dir="ltr">{{ item.title }}</h3><p>{{ item.description[current_lang] }}</p>{% include artwork.html name=item.art %}</a>{% endfor %}</div>
+  </section>
+  <section class="section wrap split engineering" id="products">
+    <div><h2>{{ t.engineering_title }}</h2><p class="section-description">{{ t.engineering_description }}</p><div class="capability-grid">{% for item in site.data.design.engineering %}<div class="capability-card"><span class="icon-ring">{% include icon.html name=item.icon %}</span><h3 dir="ltr">{{ item.title }}</h3><p>{{ item.description[current_lang] }}</p></div>{% endfor %}</div></div>
+    <div class="architecture"><ol dir="ltr"><li>Applications</li><li>System Services</li><li>Framework</li><li>Operating System</li><li>Hardware</li></ol><p>{{ t.stack_caption }}</p></div>
+  </section>
+  <section class="section dark" id="device-management"><div class="wrap split fleet"><div><h2>{{ t.fleet_title }}</h2><p class="section-description">{{ t.fleet_description }}</p><div class="capability-grid">{% for item in site.data.design.fleet %}<div class="capability-card"><span class="icon-ring">{% include icon.html name=item.icon %}</span><h3 dir="ltr">{{ item.title }}</h3></div>{% endfor %}</div></div>{% include artwork.html name='fleet' alt=t.fleet_alt %}</div></section>
+  <section class="section wrap" id="solutions"><h2 class="centered">{{ t.beyond_title }}</h2><div class="services-grid">{% for item in site.data.design.services %}<a class="service-card" id="{{ item.id }}" href="#contact">{% include artwork.html name=item.art %}<div class="service-copy"><h3 dir="ltr">{{ item.title }}</h3><p>{{ item.description[current_lang] }}</p></div></a>{% endfor %}</div></section>
+  <section class="section dark" id="about"><div class="wrap about-grid">{% include artwork.html name='chip' alt=t.chip_alt %}<div><h2>{{ t.why_title }}</h2><div class="reasons-grid">{% for item in site.data.design.why %}<div class="reason">{% include icon.html name=item.icon %}<h3>{{ item.heading[current_lang] }}</h3><p>{{ item.description[current_lang] }}</p></div>{% endfor %}</div></div></div></section>
+  <section class="section knowledge-section" id="knowledge"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">{{ t.knowledge }}</p><h2>{{ t.knowledge_title }}</h2><p class="section-description">{{ t.knowledge_description }}</p></div><a class="text-link" href="{{ home_url | append: 'knowledge/' | relative_url }}">{{ t.all_knowledge }} <span aria-hidden="true">↗</span></a></div><div class="post-grid">{% for item in site.knowledge %}{% include article-card.html item=item kind='knowledge' %}{% endfor %}{% for item in site.posts limit: 1 %}{% include article-card.html item=item kind='blog' %}{% endfor %}</div><a class="text-link all-posts" href="{{ home_url | append: 'blog/' | relative_url }}">{{ t.all_posts }} <span aria-hidden="true">↗</span></a></div></section>
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <div class="contact-copy">
+        <p class="contact-kicker"><span aria-hidden="true"></span>{{ t.start }}</p>
+        <h2 id="contact-title">{{ t.contact_title }}<br><em>{{ t.contact_emphasis }}</em></h2>
+        <p class="contact-description">{{ t.contact_description }}</p>
+      </div>
+      <div class="contact-action">
+        <span class="contact-symbol" aria-hidden="true"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 27 27 9M9 9h18v18"/></svg></span>
+        <a class="button contact-button" href="mailto:info@raybone.ir">{{ t.expert }} <span aria-hidden="true">↗</span></a>
+        <a class="contact-email" dir="ltr" href="mailto:info@raybone.ir">info@raybone.ir</a>
+      </div>
+    </div>
+  </section>
+</main>

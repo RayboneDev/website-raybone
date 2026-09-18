@@ -1,0 +1,8 @@
+{% assign image_path = '/assets/images/artwork/' | append: include.name | append: '.webp' %}
+<img
+  class="artwork artwork-{{ include.name }}"
+  src="{{ image_path | relative_url }}"
+  alt="{{ include.alt | default: '' | escape }}"
+  {% if include.name == 'hero' %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}
+  decoding="async"
+>

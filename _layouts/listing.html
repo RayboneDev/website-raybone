@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{% include locale.html %}
+<main id="main" class="listing-main">
+  <div class="page-heading dark"><div class="wrap"><a class="back" href="{{ home_url | relative_url }}">{{ t.back }}</a><p class="eyebrow">Raybone</p><h1>{{ page.title }}</h1><p>{{ page.description }}</p></div></div>
+  <div class="wrap section"><div class="post-grid">{% if page.section == 'blog' %}{% for item in site.posts %}{% include article-card.html item=item kind='blog' %}{% endfor %}{% else %}{% for item in site.knowledge %}{% include article-card.html item=item kind='knowledge' %}{% endfor %}{% endif %}</div></div>
+</main>

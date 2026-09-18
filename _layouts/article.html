@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{% include locale.html %}
+<main id="main" class="article-main">
+  <div class="page-heading dark"><div class="article-wrap"><a class="back" href="{{ home_url | append: page.section | append: '/' | relative_url }}">{% if page.section == 'blog' %}{{ t.blog }}{% else %}{{ t.knowledge }}{% endif %}</a><h1>{{ page.title }}</h1>{% if page.date %}<p class="meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y / %m / %d' }}</time>{% if page.author %} · {{ t.written_by }} {{ page.author }}{% endif %}</p>{% endif %}</div></div>
+  <article class="article-body article-wrap">{{ content }}<div class="article-end"><a class="text-link" href="{{ home_url | append: page.section | append: '/' | relative_url }}">{% if page.section == 'blog' %}{{ t.all_posts }}{% else %}{{ t.all_knowledge }}{% endif %}</a><a class="text-link" href="{{ home_url | relative_url }}#contact">{{ t.talk }}</a></div></article>
+</main>

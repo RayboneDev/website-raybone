@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ home_url | relative_url }}" aria-label="Raybone — {{ t.home }}"><span class="brand-mark">R</span><span dir="ltr">Raybone</span></a>
+    <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="{{ t.menu }}"><span></span><span></span><span></span></button>
+    <nav id="primary-nav" class="primary-nav" aria-label="{{ t.menu }}">
+      <a href="{{ home_url | relative_url }}">{{ t.home }}</a>
+      <a href="{{ home_url | relative_url }}#products">{{ t.products }}</a>
+      <a href="{{ home_url | relative_url }}#industries">{{ t.industries }}</a>
+      <a href="{{ home_url | relative_url }}#solutions">{{ t.solutions }}</a>
+      <a href="{{ home_url | relative_url }}#about">{{ t.about }}</a>
+      <a href="{{ home_url | append: 'blog/' | relative_url }}"{% if page.section == 'blog' or page.layout == 'post' %} aria-current="page"{% endif %}>{{ t.blog }}</a>
+      <a href="{{ home_url | append: 'knowledge/' | relative_url }}"{% if page.section == 'knowledge' or page.layout == 'knowledge' %} aria-current="page"{% endif %}>{{ t.knowledge }}</a>
+      <a href="{{ home_url | relative_url }}#contact">{{ t.contact }}</a>
+    </nav>
+    <div class="header-actions">
+      <a class="language-link" href="{{ alternate_url | relative_url }}" lang="{{ other_lang }}" hreflang="{{ other_lang }}">{% if current_lang == 'en' %}فارسی{% else %}EN{% endif %}</a>
+      <a class="button button-outline" href="{{ home_url | relative_url }}#contact">{{ t.talk }}</a>
+    </div>
+  </div>
+</header>

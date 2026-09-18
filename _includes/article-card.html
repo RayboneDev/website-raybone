@@ -1,0 +1,5 @@
+{% assign article_title = include.item.title %}
+{% assign article_excerpt = include.item.excerpt %}
+{% assign article_url = include.item.url %}
+{% if current_lang == 'en' %}{% assign article_title = include.item.title_en %}{% assign article_excerpt = include.item.excerpt_en %}{% assign article_url = include.item.url | prepend: '/en' %}{% endif %}
+<article class="post-card"><p class="eyebrow">{% if include.kind == 'blog' %}{{ t.blog }}{% else %}{{ t.knowledge }}{% endif %}</p><h3><a href="{{ article_url | relative_url }}">{{ article_title }}</a></h3>{% if include.kind == 'blog' %}<time datetime="{{ include.item.date | date: '%Y-%m-%d' }}">{{ include.item.date | date: '%Y / %m / %d' }}</time>{% endif %}<p>{{ article_excerpt | strip_html | truncate: 160 }}</p><a class="text-link" href="{{ article_url | relative_url }}" aria-label="{{ t.read }}: {{ article_title | escape }}">{{ t.read }} <span aria-hidden="true">↗</span></a></article>
