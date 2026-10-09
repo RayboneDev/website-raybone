@@ -1,13 +1,14 @@
 ---
 title: فلش امن در گوشی‌های با پردازنده مدیاتک
 date: 2026-10-09
-excerpt: در این نوشته در مورد سه واژه DA، Scatter و Auth در گوشی‌های مدیاتکی بحث می‌کنیم.
+excerpt: در این نوشته در مورد سه واژه DA، Scatter و Auth در گوشی‌های مدیاتکی بحث می‌کنیم
 lang: fa
 section: blog
 title_en: Why is the operating system part of product design?
-excerpt_en: In this post, we introduce three key terms used in MediaTek devices: DA, Scatter, and Auth.
-translation_url: /en/blog/MTKSPFlash/
+excerpt_en:  In this post, we introduce three key terms used in MediaTek devices DA, Scatter, and Auth
+translation_url: /en/blog/product-os/
 ---
+
 
 هنگام فلش گوشی‌هایی با پردازنده **مدیاتک (MediaTek)**، احتمالاً با ابزاری به نام **SP Flash Tool** سر و کار خواهید داشت. این ابزار برای فلش رام (یا همان Firmware) به سه فایل نیاز دارد:
 * **Scatter**: فایلی با فرمت معمولاً `xml` یا `txt` که پس از بیلد رام تولید می‌شود.
