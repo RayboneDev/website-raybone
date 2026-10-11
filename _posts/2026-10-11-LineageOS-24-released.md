@@ -5,9 +5,17 @@ author: امیرعلی اکبری
 excerpt: خلاصه‌ای از تغییرات جدیدترین نسخه سیستم‌عامل لینیج
 lang: fa
 section: blog
+permalink: /blog/lineageos-24-released/
+title_en: LineageOS 24 released
+excerpt_en: A look at the changes in the latest version of LineageOS
+translation_url: /en/blog/lineageos-24-released/
 ---
 
 نسخه ۲۴ سیستم عامل LineageOS در ۱۹ مهر ۱۴۰۵ منتشر شد. این نسخه مبتنی بر اندروید ۱۷ است که تیر ماه امسال منتشر شده است. این نسخه از لینیج در آستانه دهمین سال فعالیت این پروژه عرضه شده است.
+
+<figure class="post-lead-image">
+  <img src="{{ '/assets/images/blog/lineageos-24-released.webp' | relative_url }}" alt="تصویر نسخه ۲۴ لینیج‌اواس بر پایه اندروید ۱۷، با نمایش قابلیت‌های Canvas، به‌روزرسانی جریانی و نصب از طریق WebUSB" width="1440" height="811">
+</figure>
 
 لینیج ۲۴ علاوه بر اعمال وصله‌های امنیتی اندروید، نسخه‌های جدیدتر از برنامه‌های کاربردی را به همراه دارد. برنامه‌های Catapult (لانچر برای تلویزیون‌های هوشمند)، Etar (تقویم)، Twelve (پخش کننده موسیقی)، Seedvault (ابزار سیستم‌عاملی پشتیبان‌گیری از گوشی)، و وب ویوی سیستم به آخرین نسخه خود به‌روزرسانی شده‌اند. به ویژه بسیاری از برنامک‌های لینیج بر اساس متریال ۳ طراحی ‌شده‌اند.
 

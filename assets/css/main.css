@@ -149,6 +149,8 @@ html[dir="rtl"] .footer-grid a[dir="ltr"] { text-align: right; }
 .article-body blockquote { margin: 30px 0; padding: 18px 26px; border-inline-start: 3px solid var(--blue); background: #f4f8fc; }
 .article-body blockquote p { margin: 0; }
 .article-body img { max-width: 100%; height: auto; }
+.post-lead-image { margin: 32px 0; }
+.post-lead-image img { display: block; width: 100%; border-radius: 16px; }
 .article-body pre { overflow-x: auto; direction: ltr; }
 .article-end { margin-top: 50px; padding-top: 25px; border-top: 1px solid var(--line); display: flex; gap: 25px; justify-content: space-between; }
 html[lang="en"] h1, html[lang="en"] h2 { line-height: 1.2; }
