@@ -1,12 +1,10 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-# gem "rails"
+gem "jekyll", "~> 4.2.2"
 
-gem "github-pages", "~> 223"
-# Ruby 3.4+ no longer ships CSV as a default gem, while Jekyll 3.9
-# still requires it at startup.
-gem "csv"
-gem "bigdecimal"
-gem "webrick"
+# Pin ffi to a version compatible with Ruby 2.7
+gem "ffi", "~> 1.16.3"
+
+group :jekyll_plugins do
+  # Add plugins here later
+end

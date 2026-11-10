@@ -1,4 +1,38 @@
 ---
-layout: article
+layout: default
 ---
-{{ content }}
+
+<main class="container mx-auto px-6 py-16 max-w-3xl">
+    
+    <!-- 1. The Title -->
+    <h1 class="text-4xl md:text-5xl font-extrabold text-zinc-900 dark:text-white mb-6 leading-tight">
+        {{ page.title }}
+    </h1>
+    
+    <!-- Meta Info (Category and Reading Time from your markdown file) -->
+    <div class="flex items-center gap-4 text-sm font-medium text-zinc-500 dark:text-zinc-400 mb-10">
+        <span class="bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 px-3 py-1 rounded-full">
+            {{ page.categories.first | default: "دانشنامه" }}
+        </span>
+        {% if page.reading_time %}
+        <span class="flex items-center gap-1">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            زمان مطالعه: {{ page.reading_time }} دقیقه
+        </span>
+        {% endif %}
+    </div>
+
+    <!-- 2. The Image (1:1 Aspect Ratio) -->
+    <!-- Max-width is used here so the square image doesn't take up the entire screen height on desktops -->
+    <div class="w-full max-w-xl mx-auto mb-12">
+        <img src="{{ page.image | default: '/assets/images/ios-aosp.jpeg' | relative_url }}" 
+             alt="{{ page.title }}" 
+             class="w-full aspect-square object-cover rounded-3xl shadow-sm border border-zinc-100 dark:border-zinc-800" />
+    </div>
+
+    <!-- 3. The Text -->
+    <article class="prose prose-lg md:prose-xl dark:prose-invert prose-indigo w-full max-w-none text-zinc-800 dark:text-zinc-200 leading-relaxed">
+        {{ content }}
+    </article>
+
+</main>

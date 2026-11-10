@@ -1,0 +1,78 @@
+<!-- Industries Section: Cinematic Spotlight Cards (Fixed Z-Index) -->
+<section class="py-24 bg-white dark:bg-zinc-950 border-y border-zinc-100 dark:border-zinc-800">
+    <div class="container mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-zinc-50 mb-4">تقریباً هر چیزی که روشن می‌شود</h2>
+            <p class="text-lg text-zinc-600 dark:text-zinc-400">راهکارهای نرم‌افزاری ما برای صنایع و تجهیزات مختلف</p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Industry Card 1: Mobile -->
+            <div class="group relative h-[22rem] rounded-[2rem] overflow-hidden cursor-pointer shadow-sm hover:shadow-2xl hover:shadow-indigo-500/20 transition-all duration-500">
+                <!-- Full Background Image (z-0) -->
+                <img src="{{ '/assets/images/mobile-image1.jpeg' | relative_url }}" alt="Mobile" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-out z-0" />
+                
+                <!-- Dynamic Gradient Overlay (z-10) -->
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent opacity-80 group-hover:opacity-95 group-hover:from-indigo-950 transition-all duration-500 z-10"></div>
+                
+                <!-- Hover Action Icon (z-20) -->
+                <div class="absolute top-6 left-6 w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transform -translate-y-4 group-hover:translate-y-0 transition-all duration-500 z-20">
+                    <svg class="w-5 h-5 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </div>
+
+                <!-- Text Content (z-20) -->
+                <div class="absolute bottom-0 w-full p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 z-20">
+                    <h3 class="text-3xl font-bold text-white mb-1">Mobile</h3>
+                    <p class="text-zinc-300 text-sm font-medium">موبایل و تبلت</p>
+                </div>
+            </div>
+            
+            <!-- Industry Card 2: Payment -->
+            <div class="group relative h-[22rem] rounded-[2rem] overflow-hidden cursor-pointer shadow-sm hover:shadow-2xl hover:shadow-indigo-500/20 transition-all duration-500">
+                <img src="{{ '/assets/images/pos-image1.jpeg' | relative_url }}" alt="Payment" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-out z-0" />
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent opacity-80 group-hover:opacity-95 group-hover:from-indigo-950 transition-all duration-500 z-10"></div>
+                
+                <div class="absolute top-6 left-6 w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transform -translate-y-4 group-hover:translate-y-0 transition-all duration-500 z-20">
+                    <svg class="w-5 h-5 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </div>
+
+                <div class="absolute bottom-0 w-full p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 z-20">
+                    <h3 class="text-3xl font-bold text-white mb-1">Payment</h3>
+                    <p class="text-zinc-300 text-sm font-medium">پرداخت و دستگاه‌های هوشمند</p>
+                </div>
+            </div>
+            
+            <!-- Industry Card 3: Industrial -->
+            <div class="group relative h-[22rem] rounded-[2rem] overflow-hidden cursor-pointer shadow-sm hover:shadow-2xl hover:shadow-indigo-500/20 transition-all duration-500">
+                <img src="{{ '/assets/images/industry-image1.png' | relative_url }}" alt="Industrial" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-out z-0" />
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent opacity-80 group-hover:opacity-95 group-hover:from-indigo-950 transition-all duration-500 z-10"></div>
+                
+                <div class="absolute top-6 left-6 w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transform -translate-y-4 group-hover:translate-y-0 transition-all duration-500 z-20">
+                    <svg class="w-5 h-5 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </div>
+
+                <div class="absolute bottom-0 w-full p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 z-20">
+                    <h3 class="text-3xl font-bold text-white mb-1">Industrial</h3>
+                    <p class="text-zinc-300 text-sm font-medium">تجهیزات صنعتی</p>
+                </div>
+            </div>
+
+            <!-- Industry Card 4: Embedded -->
+            <div class="group relative h-[22rem] rounded-[2rem] overflow-hidden cursor-pointer shadow-sm hover:shadow-2xl hover:shadow-indigo-500/20 transition-all duration-500">
+                <img src="{{ '/assets/images/embedded-image1.jpeg' | relative_url }}" alt="Embedded" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-out z-0" />
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent opacity-80 group-hover:opacity-95 group-hover:from-indigo-950 transition-all duration-500 z-10"></div>
+                
+                <div class="absolute top-6 left-6 w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transform -translate-y-4 group-hover:translate-y-0 transition-all duration-500 z-20">
+                    <svg class="w-5 h-5 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </div>
+
+                <div class="absolute bottom-0 w-full p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 z-20">
+                    <h3 class="text-3xl font-bold text-white mb-1">Embedded</h3>
+                    <p class="text-zinc-300 text-sm font-medium">محصولات Embedded</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

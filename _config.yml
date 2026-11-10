@@ -1,28 +1,5 @@
-title: رایبُن | Raybone
-description: توسعه و سفارشی‌سازی سیستم‌عامل و نرم‌افزار پایه دستگاه متناسب با سخت‌افزار، کاربرد و مدل کسب‌وکار شما.
-url: https://raybone.ir
-baseurl: ""
-lang: fa
-timezone: Asia/Tehran
-markdown: kramdown
-permalink: /blog/:title/
-collections:
-  knowledge:
-    output: true
-    permalink: /knowledge/:name/
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      lang: fa
-      section: blog
-  - scope:
-      path: ""
-      type: knowledge
-    values:
-      layout: knowledge
-      lang: fa
-      section: knowledge
-exclude: [README.md, AGENTS.md, justfile, vendor/, scripts/]
+title: Raybone Website
+description: The new Raybone landing page
+url: "https://raybonedev.github.io"
+baseurl: "/website-raybone-new"
+exclude: ["Gemfile", "Gemfile.lock", "README.md", "justfile", "scripts"]

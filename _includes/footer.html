@@ -1,10 +1,101 @@
-<footer class="site-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-brand"><a class="brand" href="{{ home_url | relative_url }}"><span class="brand-mark">R</span><span dir="ltr">Raybone</span></a><p>{{ t.footer_description }}</p></div>
-    <div><h2>{{ t.products }}</h2><a href="{{ home_url | relative_url }}#products">{{ t.custom_os }}</a><a href="{{ home_url | relative_url }}#device-management">{{ t.device_management }}</a><a href="{{ home_url | relative_url }}#enterprise-mobility">{{ t.enterprise }}</a><a href="{{ home_url | relative_url }}#platform-services">{{ t.platform }}</a><a href="{{ home_url | relative_url }}#applications">{{ t.applications }}</a></div>
-    <div><h2>{{ t.industries }}</h2>{% for item in site.data.design.products limit: 5 %}<a href="{{ home_url | relative_url }}#industry-{{ item.art }}">{{ item.description[current_lang] }}</a>{% endfor %}</div>
-    <div><h2>{{ t.company }}</h2><a href="{{ home_url | relative_url }}#about">{{ t.about }}</a><a href="{{ home_url | relative_url }}#about">{{ t.team }}</a><a href="mailto:info@raybone.ir?subject=Careers">{{ t.careers }}</a><a href="mailto:info@raybone.ir?subject=Collaboration">{{ t.collaborate }}</a><a href="{{ home_url | append: 'blog/' | relative_url }}">{{ t.blog }}</a><a href="{{ home_url | append: 'knowledge/' | relative_url }}">{{ t.knowledge }}</a></div>
-    <div><h2>{{ t.contact }}</h2><p>{{ t.location }}</p><a dir="ltr" href="tel:+982191000000">021-9100-0000</a><a dir="ltr" href="mailto:info@raybone.ir">info@raybone.ir</a><a dir="ltr" href="{{ home_url | relative_url }}">www.raybone.ir</a></div>
-  </div>
-  <div class="wrap copyright">© {{ site.time | date: '%Y' }} Raybone. {{ t.rights }}</div>
+<footer class="bg-zinc-900 pt-20 pb-10 border-t border-zinc-800 relative overflow-hidden mt-24">
+    <!-- Decorative glowing background element -->
+    <div
+        class="absolute top-0 right-0 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl -z-10 tranzinc-x-1/2 -tranzinc-y-1/2">
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+        <!-- 4-Column Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
+            <!-- Column 1: Brand & Bio -->
+            <div class="lg:col-span-1">
+                <a href="{{ '/' | relative_url }}" class="inline-flex items-center gap-3 mb-6">
+                    <img src="{{ '/assets/logo/raybone-logo.png' | relative_url }}" alt="Raybone Logo"
+                        class="h-12 w-auto grayscale brightness-200">
+                </a>
+                <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                    رایبُن، ارائه‌دهنده راهکارهای تخصصی سیستم‌عامل، مدیریت دستگاه‌ها و نرم‌افزار پایه برای محصولات
+                    هوشمند و تجهیزات متصل.
+                </p>
+                
+                <!-- کد اینماد -->
+                <div class="mt-4">
+                    <a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=8509348&Code=3VzgUxkMM0dDV2CtoyUXAh3FuFcN8eMI'>
+                        <img referrerpolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=8509348&Code=3VzgUxkMM0dDV2CtoyUXAh3FuFcN8eMI' alt='' style='cursor:pointer' code='3VzgUxkMM0dDV2CtoyUXAh3FuFcN8eMI' class="w-28 h-auto bg-white rounded-lg p-2 transition-transform hover:scale-105">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div>
+                <h4 class="text-white font-bold mb-6 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-indigo-500"></span> محصولات و خدمات
+                </h4>
+                <ul class="space-y-3 text-sm text-zinc-400">
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">سیستم‌عامل سفارشی</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">مدیریت دستگاه‌ها (MDM)</a></li>
+                    <li><a href="https://raybonedev.github.io/raypayam-landing/"
+                            class="hover:text-indigo-400 transition-colors">رای‌پیام</a></li>
+                    <li><a href="https://raybonedev.github.io/raypayam-landing/"
+                            class="hover:text-indigo-400 transition-colors">رای‌آمد</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Company Links -->
+            <div>
+                <h4 class="text-white font-bold mb-6 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-indigo-500"></span> دسترسی سریع
+                </h4>
+                <ul class="space-y-3 text-sm text-zinc-400">
+                    <li><a href="{{ '/knowledge/' | relative_url }}"
+                            class="hover:text-indigo-400 transition-colors">دانشنامه</a></li>
+                    <li><a href="{{ 'javascript:void(0)' | relative_url }}"
+                            class="hover:text-indigo-400 transition-colors">وبلاگ</a></li>
+                    <li><a href="{{ '/about/' | relative_url }}" class="hover:text-indigo-400 transition-colors">درباره رایبُن</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">فرصت‌های شغلی</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Info -->
+            <div>
+                <h4 class="text-white font-bold mb-6 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-indigo-500"></span> ارتباط با ما
+                </h4>
+                <ul class="space-y-4 text-sm text-zinc-400">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-indigo-500 shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <span>تهران، خیابان آزادی، خیابان حبیب‌الله، خیابان قاسمی، جنب جهاد دانشگاهی شریف، باکس شریف</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-indigo-500 shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <a href="mailto:info@raybone.ir"
+                            class="hover:text-indigo-400 transition-colors">info@raybone.ir</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Bar -->
+        <div
+            class="pt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-zinc-500">
+            <p>© 2026 Raybone. تمام حقوق برای رایبُن محفوظ است.</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-white transition-colors">قوانین و مقررات</a>
+                <a href="#" class="hover:text-white transition-colors">حریم خصوصی</a>
+            </div>
+        </div>
+    </div>
 </footer>

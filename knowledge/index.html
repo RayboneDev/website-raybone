@@ -1,7 +1,101 @@
 ---
-layout: listing
-lang: fa
-section: knowledge
-title: دانشنامه رایبُن
-description: دانش سیستم‌عامل، بدون پیچیده‌گویی.
+layout: default
+title: دانشنامه | Raybone
 ---
+
+<!-- Knowledge Base Header -->
+<section class="border-b border-indigo-100 dark:border-zinc-800 py-24 relative overflow-hidden">
+    
+    <!-- Image 1 (Visible by default) -->
+    <img id="banner-img-1" src="{{ '/assets/images/knowledge-banner-2.jpeg' | relative_url }}" class="absolute inset-0 w-full h-full object-cover object-center z-0 transition-opacity duration-1000 opacity-100" alt="دانشنامه سیستم‌عامل" />
+    
+    <!-- Image 2 (Hidden by default) -->
+    <img id="banner-img-2" src="{{ '/assets/images/knowledge-banner-3.jpeg' | relative_url }}" class="absolute inset-0 w-full h-full object-cover object-center z-0 transition-opacity duration-1000 opacity-0" alt="دانشنامه سیستم‌عامل" />
+    
+    <!-- Radial Gradient (Z-index updated to 10 so it sits above both images) -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-zinc-900/85 via-zinc-900/65 to-transparent z-10"></div>
+    
+    <!-- Content (Z-index updated to 20 so it sits above the gradient) -->
+    <div class="container mx-auto px-6 text-center relative z-20">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 drop-shadow-lg shadow-black">
+            دانشنامه سیستم‌عامل
+        </h1>
+        <p class="text-lg text-white max-w-2xl mx-auto mb-10 drop-shadow-md shadow-black">
+            مجموعه‌ای از مقالات، راهنماها و دانش فنی درباره سیستم‌عامل‌ها، اندروید، لینوکس و سیستم‌های نهفته.
+        </p>
+    </div>
+
+</section>
+
+<!-- Simple Script to swap images every 3 seconds -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const img1 = document.getElementById('banner-img-1');
+        const img2 = document.getElementById('banner-img-2');
+        
+        // Run this every 3000 milliseconds (3 seconds)
+        setInterval(() => {
+            if (img1.classList.contains('opacity-100')) {
+                // Fade out Image 1, Fade in Image 2
+                img1.classList.replace('opacity-100', 'opacity-0');
+                img2.classList.replace('opacity-0', 'opacity-100');
+            } else {
+                // Fade out Image 2, Fade in Image 1
+                img2.classList.replace('opacity-100', 'opacity-0');
+                img1.classList.replace('opacity-0', 'opacity-100');
+            }
+        }, 5000);
+    });
+</script>
+
+<!-- Articles Grid -->
+<section class="container mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        {% for post in site.categories.knowledge %}
+        
+        <!-- Liquid Logic to Calculate Reading Time -->
+        {% capture word_count %}{{ post.content | number_of_words }}{% endcapture %}
+        {% assign reading_time = word_count | divided_by: 200 %}
+        {% if reading_time == 0 %}{% assign reading_time = 1 %}{% endif %}
+
+        <!-- Beautiful Article Card -->
+        <a href="{{ post.url | relative_url }}" class="group flex flex-col bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-zinc-100 dark:border-zinc-700 transition-all duration-300 hover:-translate-y-2">
+            <div class="h-52 overflow-hidden relative">
+                <!-- FIX: Use post.image with a fallback default image -->
+                <img src="{{ post.image | default: '/assets/images/ios-aosp.jpeg' | relative_url }}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" alt="Cover image for {{ post.title }}" />
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            
+            <div class="p-6 flex-grow flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 mb-3 inline-block px-3 py-1 bg-indigo-50 dark:bg-indigo-900/30 rounded-full">
+                        {{ post.categories.first | default: "دانشنامه" }}
+                    </span>
+                    <h3 class="font-bold text-xl text-zinc-900 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                        {{ post.title }}
+                    </h3>
+                    <p class="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed line-clamp-3 mb-4">
+                        {{ post.excerpt | strip_html | truncatewords: 25 }}
+                    </p>
+                </div>
+                
+                <div class="mt-auto pt-4 border-t border-zinc-100 dark:border-zinc-700 flex justify-between items-center text-xs font-medium text-zinc-500 dark:text-zinc-400">
+                    <span class="flex items-center gap-1.5">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <!-- FIX: Output the local variable 'reading_time' instead of 'post.reading_time' -->
+                        زمان مطالعه: {{ post.reading_time }} دقیقه
+                    </span>
+                    <span class="flex items-center gap-1 text-indigo-600 dark:text-indigo-400 opacity-0 group-hover:opacity-100 transform tranzinc-x-2 group-hover:tranzinc-x-0 transition-all duration-300">
+                        مطالعه 
+                        <svg class="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </span>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+
+    </div>
+</section>
+
+{% include footer.html %}

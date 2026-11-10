@@ -1,0 +1,375 @@
+---
+layout: default
+title: هویت بصری و نشان رایبن | RayBone
+---
+
+<!-- Branding Hero Section (Slight Top & Bottom Crop) -->
+<section class="relative w-full bg-zinc-900 aspect-[2/1] md:aspect-[21/9] max-h-[85vh] overflow-hidden">
+
+    <!-- object-cover with the new aspect ratio will only crop a tiny bit -->
+    <img src="{{ '/assets/branding/hero.jpeg' | relative_url }}" class="w-full h-full object-cover object-center z-0"
+        alt="هویت بصری رایبن" />
+
+    <!-- Gradient Overlay -->
+    <div
+        class="absolute inset-0 bg-gradient-to-r from-zinc-900/90 via-zinc-900/40 to-transparent z-10 pointer-events-none">
+    </div>
+
+</section>
+
+<!-- 1. Core Concepts & Inspirations (الهام‌بخش‌های برند) -->
+<section class="container mx-auto px-6 py-24">
+
+    <!-- Section Header -->
+    <div class="text-center mb-12">
+        <span
+            class="text-indigo-600 dark:text-indigo-400 font-semibold tracking-wider uppercase text-sm mb-3 block">Moodboard
+            & Concepts</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-zinc-900 dark:text-white mb-6">سرچشمه‌های الهام</h2>
+        <p class="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
+            لوگوی رایبن یک فرم تصادفی نیست؛ بلکه تجلی بصری مفاهیمی انتزاعی است که از دل طبیعت، معماری و فناوری استخراج
+            شده‌اند.
+        </p>
+    </div>
+
+    <!-- Abstract Concepts (Modern Tags) -->
+    <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto mb-16">
+        <span
+            class="px-5 py-2.5 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 rounded-full text-sm font-medium shadow-sm flex items-center gap-2 hover:border-indigo-400 transition-colors">
+            <div class="w-2 h-2 rounded-full bg-indigo-500"></div> اعمال اراده و جسارت
+        </span>
+        <span
+            class="px-5 py-2.5 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 rounded-full text-sm font-medium shadow-sm flex items-center gap-2 hover:border-indigo-400 transition-colors">
+            <div class="w-2 h-2 rounded-full bg-purple-500"></div> یکپارچگی سخت‌افزار و نرم‌افزار
+        </span>
+        <span
+            class="px-5 py-2.5 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 rounded-full text-sm font-medium shadow-sm flex items-center gap-2 hover:border-indigo-400 transition-colors">
+            <div class="w-2 h-2 rounded-full bg-blue-500"></div> پیچیدگی در عین سادگی
+        </span>
+        <span
+            class="px-5 py-2.5 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 rounded-full text-sm font-medium shadow-sm flex items-center gap-2 hover:border-indigo-400 transition-colors">
+            <div class="w-2 h-2 rounded-full bg-emerald-500"></div> ارزشمندی و قدرت‌نمایی
+        </span>
+    </div>
+
+    <!-- Visual Inspirations Bento Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 max-w-6xl mx-auto">
+
+        <!-- Image 1: Rock / صخره (Large) -->
+        <div class="md:col-span-7 relative group overflow-hidden rounded-3xl h-[350px] shadow-md">
+            <!-- نکته: نام عکس صخره خود را اینجا جایگزین کنید (مثلا 31.png) -->
+            <img src="{{ '/assets/branding/31.jpeg' | relative_url }}"
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                alt="صخره">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-900/90 via-zinc-900/20 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 p-8">
+                <span class="text-indigo-400 text-sm font-bold uppercase tracking-wider mb-1 block">Nature</span>
+                <h3 class="text-3xl font-bold text-white mb-2">دیوار محکم و صخره</h3>
+                <p class="text-zinc-300">نماد استقامت، پایداری و ایستادگی در دنیای پرتلاطم.</p>
+            </div>
+        </div>
+
+        <!-- Image 2: Atom / اتم و میکروسکوپ -->
+        <div class="md:col-span-5 relative group overflow-hidden rounded-3xl h-[350px] shadow-md">
+            <!-- نکته: نام عکس اتم/میکروسکوپ خود را اینجا قرار دهید -->
+            <img src="{{ '/assets/branding/34.jpeg' | relative_url }}"
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                alt="اتم و میکروسکوپ">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-900/90 via-zinc-900/20 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 p-8">
+                <span class="text-purple-400 text-sm font-bold uppercase tracking-wider mb-1 block">Science</span>
+                <h3 class="text-2xl font-bold text-white mb-2">اتم و ذره</h3>
+                <p class="text-zinc-300 text-sm">دقت، ریزنگری و گرانبها بودن ساختار.</p>
+            </div>
+        </div>
+
+        <!-- Image 3: Circuit / مدار و تراشه -->
+        <div class="md:col-span-5 relative group overflow-hidden rounded-3xl h-[300px] shadow-md">
+            <img src="{{ '/assets/branding/05.jpeg' | relative_url }}"
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                alt="تراشه">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-900/90 via-zinc-900/20 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 p-8">
+                <span class="text-blue-400 text-sm font-bold uppercase tracking-wider mb-1 block">Technology</span>
+                <h3 class="text-2xl font-bold text-white mb-2">مدار الکترونیکی و تراشه</h3>
+                <p class="text-zinc-300 text-sm">پیچیدگی در هم‌تنیده سیستم‌های سخت‌افزاری و نرم‌افزاری.</p>
+            </div>
+        </div>
+
+        <!-- Image 4: China Wall / دیوار چین (Large) -->
+        <div class="md:col-span-7 relative group overflow-hidden rounded-3xl h-[300px] shadow-md">
+            <!-- نکته: نام عکس دیوار چین خود را اینجا جایگزین کنید (مثلا 32.png) -->
+            <img src="{{ '/assets/branding/32.jpeg' | relative_url }}"
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                alt="دیوار چین">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-900/90 via-zinc-900/20 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 p-8">
+                <span class="text-emerald-400 text-sm font-bold uppercase tracking-wider mb-1 block">Architecture</span>
+                <h3 class="text-3xl font-bold text-white mb-2">معماری و اصالت</h3>
+                <p class="text-zinc-300">مسیرهای پیوسته، مهندسی دقیق و حفاظت (الهام از دیوار چین).</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- 2. Why Monogram (چرا مونوگرام) -->
+<section class="bg-zinc-50 dark:bg-zinc-900 py-20 border-y border-zinc-100 dark:border-zinc-800">
+    <div class="container mx-auto px-6 max-w-4xl text-center">
+        <h2 class="text-3xl font-bold text-zinc-900 dark:text-white mb-8">چرا مونوگرام برای رایین بهتر است؟</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-right">
+            <div class="p-6 bg-white dark:bg-zinc-800 rounded-2xl shadow-sm">
+                <div class="text-indigo-500 mb-3"><svg class="w-8 h-8" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4">
+                        </path>
+                    </svg></div>
+                <h4 class="font-bold text-zinc-900 dark:text-white mb-2">خوانایی در ابعاد کوچک</h4>
+                <p class="text-sm text-zinc-600 dark:text-zinc-400">نمادهای تصویری پیچیده در ابعاد فاوآیکون خوانایی
+                    ندارند، اما مونوگرام در فشرده‌ترین حالت نیز جلوه خود را حفظ می‌کند.</p>
+            </div>
+            <div class="p-6 bg-white dark:bg-zinc-800 rounded-2xl shadow-sm">
+                <div class="text-indigo-500 mb-3"><svg class="w-8 h-8" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                        </path>
+                    </svg></div>
+                <h4 class="font-bold text-zinc-900 dark:text-white mb-2">فضای چندپهلو و لایه‌دار</h4>
+                <p class="text-sm text-zinc-600 dark:text-zinc-400">به جای یک تصویر سطحی، مونوگرام امکان تلفیق مفاهیم
+                    عمیق معماری، سخت‌افزار و نرم‌افزار را در یک فرم واحد می‌دهد.</p>
+            </div>
+            <div class="p-6 bg-white dark:bg-zinc-800 rounded-2xl shadow-sm">
+                <div class="text-indigo-500 mb-3"><svg class="w-8 h-8" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                        </path>
+                    </svg></div>
+                <h4 class="font-bold text-zinc-900 dark:text-white mb-2">انعطاف‌پذیری کامل</h4>
+                <p class="text-sm text-zinc-600 dark:text-zinc-400">از پلتفرم‌های دیجیتال و رابط‌های کاربری تاریک تا چاپ
+                    روی پیراهن و حکاکی روی دیوارهای بتنی.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3. Timeline / Process (روند شکل‌گیری) -->
+<section class="container mx-auto px-6 py-20">
+    <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-white mb-4">روند شکل‌گیری؛ از تایپوگرافی تا
+            خلق معنا</h2>
+        <p class="text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">چگونه حروف ساده به یک نماد مهندسی‌شده تبدیل شدند.
+        </p>
+    </div>
+
+    <div class="space-y-16 max-w-5xl mx-auto">
+
+        <!-- Step 1 -->
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2 flex gap-4">
+                <img src="{{ '/assets/branding/09.jpeg' | relative_url }}"
+                    class="w-1/2 rounded-2xl object-cover shadow-md" alt="Typography Analysis 1">
+                <img src="{{ '/assets/branding/10.jpeg' | relative_url }}"
+                    class="w-1/2 rounded-2xl object-cover shadow-md" alt="Typography Analysis 2">
+            </div>
+            <div class="md:w-1/2">
+                <span class="text-indigo-600 dark:text-indigo-400 font-bold text-lg">گام اول</span>
+                <h3 class="text-2xl font-bold text-zinc-900 dark:text-white mt-2 mb-4">بررسی تایپوگرافی حرف R</h3>
+                <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">همه چیز با بررسی انواع فونت‌های انگلیسی و
+                    حروف کلاسیک (سریف) آغاز شد. ما به دنبال فرمی بودیم که حس استحکام، اصالت و قدرت را منتقل کند.
+                    پایه‌های محکم در فونت‌های سریف ایده اولیه را شکل داد.</p>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+            <div class="md:w-1/2 flex gap-4">
+                <img src="{{ '/assets/branding/12.jpeg' | relative_url }}"
+                    class="w-1/2 rounded-2xl object-cover shadow-md" alt="Foundation 1">
+                <img src="{{ '/assets/branding/13.jpeg' | relative_url }}"
+                    class="w-1/2 rounded-2xl object-cover shadow-md" alt="Foundation 2">
+            </div>
+            <div class="md:w-1/2">
+                <span class="text-indigo-600 dark:text-indigo-400 font-bold text-lg">گام دوم</span>
+                <h3 class="text-2xl font-bold text-zinc-900 dark:text-white mt-2 mb-4">اصلاح ساختار و ایجاد پایه
+                    (Foundation)</h3>
+                <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">با اضافه کردن یک خط افقی در زیر حرف، یک
+                    «فونداسیون» مستحکم خلق کردیم. سپس این فرم توپر به حالت خطوط محیطی (Wireframe) تبدیل شد تا با مفاهیم
+                    مدارهای الکترونیکی و لایه‌دار بودن هماهنگ شود.</p>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <!-- Image Section (Single Image) -->
+            <div class="w-full md:w-1/2">
+                <img src="{{ '/assets/branding/15.jpeg' | relative_url }}"
+                    class="w-full h-auto rounded-3xl object-cover shadow-lg border border-zinc-100 dark:border-zinc-800/50"
+                    alt="Ray and Bone Meaning">
+            </div>
+
+            <!-- Text Section -->
+            <div class="w-full md:w-1/2">
+                <span class="text-indigo-600 dark:text-indigo-400 font-bold text-lg">گام سوم</span>
+                <h3 class="text-2xl md:text-3xl font-bold text-zinc-900 dark:text-white mt-2 mb-4">کشف مفهوم نام برند
+                    (Ray + Bone)</h3>
+                <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
+                    به ریشه نام بازگشتیم و آن را به دو بخش معنایی تقسیم کردیم:
+                </p>
+                <ul class="space-y-4 text-zinc-600 dark:text-zinc-400">
+                    <li class="flex items-start gap-3">
+                        <div class="mt-2 w-2 h-2 rounded-full bg-indigo-500 shrink-0"></div>
+                        <div><strong class="text-zinc-900 dark:text-white">رای (Ray):</strong> به معنای رایانه و
+                            نرم‌افزار، که نماد تکنولوژی و قدرت پردازش است.</div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="mt-2 w-2 h-2 rounded-full bg-purple-500 shrink-0"></div>
+                        <div><strong class="text-zinc-900 dark:text-white">بن (Bone):</strong> به معنای پی، پایه و
+                            فونداسیون، که نماد استواری، سخت‌افزار و زیرساخت محکم است.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div
+            class="bg-indigo-50 dark:bg-zinc-800/80 rounded-3xl p-8 md:p-12 text-center border border-indigo-100 dark:border-zinc-700">
+            <span class="text-indigo-600 dark:text-indigo-400 font-bold text-lg block mb-2">گام نهایی</span>
+            <h3 class="text-3xl font-bold text-zinc-900 dark:text-white mb-6">تولد مونوگرام</h3>
+            <p class="text-zinc-600 dark:text-zinc-300 max-w-3xl mx-auto leading-relaxed mb-8">
+                خط عمودی نماد ایستادگی در دنیای فناوری و خط افقی پایه، نماد فونداسیونی است که تمام سیستم بر آن استوار
+                است. زاویه دید خاص این مونوگرام، گویای خلاقیت و پروسه‌محور بودن برند است. ترکیب این عناصر فرمی را خلق
+                کرد که هم یادآور حرف R و هم فرمی شبیه به B دارد.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Final Logos 18-23 -->
+                <img src="{{ '/assets/branding/18.jpeg' | relative_url }}"
+                    class="rounded-xl shadow-sm aspect-square object-cover" alt="Final Logo iteration">
+                <img src="{{ '/assets/branding/19.jpeg' | relative_url }}"
+                    class="rounded-xl shadow-sm aspect-square object-cover" alt="Final Logo iteration">
+                <img src="{{ '/assets/branding/22.jpeg' | relative_url }}"
+                    class="rounded-xl shadow-sm aspect-square object-cover hidden md:block" alt="Final Logo iteration">
+                <img src="{{ '/assets/branding/23.jpeg' | relative_url }}"
+                    class="rounded-xl shadow-sm aspect-square object-cover hidden md:block" alt="Final Logo iteration">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- 4. Color Palette -->
+<section class="container mx-auto px-6 py-12">
+    <div class="max-w-5xl mx-auto">
+        <h3 class="text-2xl font-bold text-zinc-900 dark:text-white mb-8 text-center">پالت رنگی (Lockup)</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="flex flex-col items-center">
+                <div class="w-full h-32 rounded-2xl bg-[#001f3f] shadow-lg mb-4"></div>
+                <!-- Replace with actual Navy Blue hex -->
+                <h4 class="font-bold text-zinc-900 dark:text-white">آبی سرمه‌ای</h4>
+                <p class="text-sm text-zinc-500 text-center mt-2">نماد اعتماد، تکنولوژی، قدرت و ثبات</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-full h-32 rounded-2xl bg-[#ff8c00] shadow-lg mb-4"></div>
+                <!-- Replace with actual Orange hex -->
+                <h4 class="font-bold text-zinc-900 dark:text-white">نارنجی</h4>
+                <p class="text-sm text-zinc-500 text-center mt-2">نماد انرژی و خلاقیت</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-full h-32 rounded-2xl bg-[#800080] shadow-lg mb-4"></div>
+                <!-- Replace with actual Purple hex -->
+                <h4 class="font-bold text-zinc-900 dark:text-white">بنفش</h4>
+                <p class="text-sm text-zinc-500 text-center mt-2">نماد نوآوری و ارزشمندی</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 5. Mockups Gallery (انعطاف‌پذیری در دنیای واقعی) -->
+<section class="bg-zinc-900 py-24 mt-12">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">انعطاف‌پذیری هویت بصری در دنیای واقعی</h2>
+            <p class="text-zinc-400 max-w-2xl mx-auto">لوگوی رایین چقدر در محیط‌های مختلف انعطاف‌پذیر و قدرتمند ظاهر
+                می‌شود.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Tech Ecosystem -->
+            <div class="group relative overflow-hidden rounded-3xl">
+                <img src="{{ '/assets/branding/25.png' | relative_url }}"
+                    class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
+                    alt="اکوسیستم فناوری">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8">
+                    <h4 class="text-xl font-bold text-white mb-2">اکوسیستم فناوری</h4>
+                    <p class="text-zinc-300 text-sm">حضور روی تراشه و مدارهای الکترونیکی، نشان‌دهنده ماهیت سخت‌افزاری،
+                        قدرت پردازش و تطابق کامل با محیط‌های هولوگرافیک.</p>
+                </div>
+            </div>
+
+            <!-- Corporate -->
+            <div class="group relative overflow-hidden rounded-3xl">
+                <img src="{{ '/assets/branding/27.png' | relative_url }}"
+                    class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
+                    alt="هویت فیزیکی و اداری">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8">
+                    <h4 class="text-xl font-bold text-white mb-2">هویت فیزیکی و اداری</h4>
+                    <p class="text-zinc-300 text-sm">قرارگیری لوگو به صورت برجسته و فلزی روی دیوار بتنی، مفهوم «صخره» و
+                        «دیوار محکم» را به زیبایی در لابی شرکت‌ها نشان می‌دهد.</p>
+                </div>
+            </div>
+
+            <!-- Sports / Public -->
+            <div class="group relative overflow-hidden rounded-3xl">
+                <img src="{{ '/assets/branding/28.png' | relative_url }}"
+                    class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
+                    alt="حضور عمومی و ورزشی">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8">
+                    <h4 class="text-xl font-bold text-white mb-2">حضور عمومی و ورزشی</h4>
+                    <p class="text-zinc-300 text-sm">اسپانسری ورزشی و حضور روی پیراهن تیم، نشان‌دهنده قدرت، پویایی،
+                        رقابت‌پذیری و اعمال اراده بر مخاطب است.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 6. Moodboard (منابع الهام) -->
+<section class="container mx-auto px-6 py-24 border-b border-zinc-100 dark:border-zinc-800">
+    <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-white mb-4">موودبورد؛ از طبیعت و تاریخ تا خطوط
+            لوگو</h2>
+        <p class="text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">منابع الهام بصری که مفاهیم انتزاعی را به فرم تبدیل
+            کردند.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <!-- Inspiration 1: Rock -->
+        <div class="flex flex-col">
+            <!-- اصلاح پسوند به .png -->
+            <img src="{{ '/assets/branding/31.png' | relative_url }}"
+                class="w-full h-64 object-cover rounded-3xl mb-6 shadow-md" alt="صخره در دریا">
+            <h3 class="text-2xl font-bold text-zinc-900 dark:text-white mb-3">صخره‌های دریایی (استقامت)</h3>
+            <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                این تصویر نماد ایستادگی در برابر جریان‌های متغیر است. خطوط موازی و محکم در مونوگرام رایین، دقیقاً حس
+                یکپارچگی و سختی این صخره را در دنیای پرتلاطم فناوری منتقل می‌کنند.
+            </p>
+        </div>
+
+        <!-- Inspiration 2: Great Wall -->
+        <div class="flex flex-col">
+            <!-- اصلاح پسوند به .png -->
+            <img src="{{ '/assets/branding/32.jpeg' | relative_url }}"
+                class="w-full h-64 object-cover rounded-3xl mb-6 shadow-md" alt="دیوار چین">
+            <h3 class="text-2xl font-bold text-zinc-900 dark:text-white mb-3">دیوار چین (معماری و اصالت)</h3>
+            <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                مفهوم «دیوار محکم» ما را به سمت فرم‌های ساختاری هدایت کرد. زاویه‌دار بودن و لایه‌لایه بودن لوگو، یادآور
+                این معماری کهن است که حس ارزشمندی و پیوستگی را به برند می‌بخشد.
+            </p>
+        </div>
+    </div>
+</section>
