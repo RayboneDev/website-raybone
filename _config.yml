@@ -1,5 +1,5 @@
 title: Raybone Website
 description: The new Raybone landing page
-url: "https://raybonedev.github.io"
-baseurl: "/website-raybone-new"
+url: "https://raybone.ir"
+baseurl: ""
 exclude: ["Gemfile", "Gemfile.lock", "README.md", "justfile", "scripts"]
