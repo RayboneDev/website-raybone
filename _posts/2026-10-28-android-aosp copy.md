@@ -3,7 +3,7 @@ layout: post
 title: "Android و AOSP؛ از پلتفرم تا محصول"
 categories: knowledge
 reading_time: '۴'
-image: /assets/images/android-aosp.jpeg
+image: /assets/images/android-aosp.webp
 ---
 
 وقتی از Android برای یک محصول اختصاصی صحبت می‌کنیم، نقطه شروع فقط انتخاب نسخه سیستم‌عامل نیست؛ باید سخت‌افزار، چرخه عمر و تجربه کاربر را همزمان دید.
