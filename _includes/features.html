@@ -16,21 +16,23 @@
             <!-- Card 1: OS Engineering -->
             <div
                 class="group flex flex-col bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 border border-zinc-100 dark:border-zinc-700 transition-all duration-300">
-                <!-- Image Header -->
-                <div class="h-56 relative overflow-hidden flex items-center justify-center">
-                    <!-- تصویر مرتبط با سیستم‌عامل (می‌توانید نام عکس را تغییر دهید) -->
-                    <!-- Changed object-cover to object-contain -->
+
+                <!-- Image Header (پس‌زمینه روشن تنظیم شد تا حاشیه سفید عکس محو شود) -->
+                <div class="h-56 relative overflow-hidden flex items-center justify-center bg-zinc-50 dark:bg-zinc-200">
+
+                    <!-- عکس اصلی (این خط در کد شما پاک شده بود!) -->
                     <img src="{{ '/assets/images/layered.webp' | relative_url }}"
-                        class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
+                        class="w-full h-full object-contain mix-blend-darken group-hover:scale-105 transition-transform duration-700"
                         alt="مهندسی و توسعه سیستم‌عامل" />
+
                     <!-- Softened Gradient Overlay -->
                     <div
-                        class="absolute inset-0 bg-gradient-to-t from-white/60 dark:from-zinc-800/60 via-transparent to-transparent">
+                        class="absolute inset-0 bg-gradient-to-t from-white/80 dark:from-zinc-800/90 via-transparent to-transparent">
                     </div>
+
                     <!-- Accent Icon -->
                     <div
                         class="absolute bottom-4 right-6 w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-950/50 backdrop-blur-sm flex items-center justify-center text-amber-500 shadow-sm group-hover:rotate-3 transition-transform">
-                        <!-- Layers Icon -->
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
@@ -38,6 +40,7 @@
                         </svg>
                     </div>
                 </div>
+
                 <!-- Card Content -->
                 <div class="p-6 pt-3 flex-grow text-center">
                     <h3
@@ -111,16 +114,20 @@
             <!-- Card 4: Custom Products -->
             <div
                 class="group flex flex-col bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 border border-zinc-100 dark:border-zinc-700 transition-all duration-300">
-                <!-- Added flex items-center justify-center -->
-                <div class="h-56 relative overflow-hidden flex items-center justify-center">
-                    <!-- Changed object-cover to object-contain -->
-                    <img src="{{ '/assets/images/product.webp' | relative_url }}"
-                        class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
+
+                <!-- Image Header (پس‌زمینه همرنگ برای حل شدن حاشیه سفید اضافه شد) -->
+                <div class="h-56 relative overflow-hidden flex items-center justify-center bg-zinc-50 dark:bg-zinc-200">
+
+                    <!-- کلاس mix-blend-darken به تگ عکس اضافه شد -->
+                    <img src="{{ '/assets/images/co-working2.webp' | relative_url }}"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                         alt="توسعه محصول و راهکارهای اختصاصی" />
-                    <!-- Softened Gradient Overlay -->
+
+                    <!-- Softened Gradient Overlay (هماهنگ با کارت اول) -->
                     <div
-                        class="absolute inset-0 bg-gradient-to-t from-white/60 dark:from-zinc-800/60 via-transparent to-transparent">
+                        class="absolute inset-0 bg-gradient-to-t from-white/80 dark:from-zinc-800/90 via-transparent to-transparent">
                     </div>
+
                     <div
                         class="absolute bottom-4 right-6 w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-950/50 backdrop-blur-sm flex items-center justify-center text-amber-500 shadow-sm group-hover:rotate-3 transition-transform">
                         <!-- Cube / Solution Icon -->
@@ -130,6 +137,7 @@
                         </svg>
                     </div>
                 </div>
+
                 <div class="p-6 pt-3 flex-grow text-center">
                     <h3
                         class="text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
@@ -138,6 +146,8 @@
                         نرم‌افزاری مستقل و راهکارهای متناسب با نیاز سازمان‌ها</p>
                 </div>
             </div>
+
+
         </div>
 
 
