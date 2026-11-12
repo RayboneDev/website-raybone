@@ -1,88 +1,145 @@
 <!-- Added bg-indigo-50/40 for that soft, cool tint you liked -->
-<section id="capabilities" class="py-24 bg-indigo-50/40 dark:bg-zinc-900/80 transition-colors duration-300 relative overflow-hidden">
+<section id="capabilities"
+    class="py-24 bg-indigo-50/40 dark:bg-zinc-900/80 transition-colors duration-300 relative overflow-hidden">
     <div class="container mx-auto px-6 relative z-10">
-        
+
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-zinc-50 mb-4">فراتر از توسعه اپلیکیشن</h2>
-            <p class="text-lg text-zinc-600 dark:text-zinc-400">شناخت عمیق فناوری، امکان ساخت راهکارهایی متناسب با نیازهای خاص را فراهم می‌کند.</p>
+            <p class="text-lg text-zinc-600 dark:text-zinc-400">شناخت عمیق فناوری، امکان ساخت راهکارهایی متناسب با
+                نیازهای خاص را فراهم می‌کند</p>
         </div>
 
         <!-- 2x2 Grid for exactly 4 cards -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            
+
             <!-- Card 1: OS Engineering -->
-            <div class="group flex flex-col bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 border border-zinc-100 dark:border-zinc-700 transition-all duration-300">
+            <div
+                class="group flex flex-col bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 border border-zinc-100 dark:border-zinc-700 transition-all duration-300">
                 <!-- Image Header -->
-                <div class="h-56 relative overflow-hidden">
+                <div class="h-56 relative overflow-hidden flex items-center justify-center">
                     <!-- تصویر مرتبط با سیستم‌عامل (می‌توانید نام عکس را تغییر دهید) -->
-                    <img src="{{ '/assets/images/os.webp' | relative_url }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="مهندسی و توسعه سیستم‌عامل" />
+                    <!-- Changed object-cover to object-contain -->
+                    <img src="{{ '/assets/images/layered.webp' | relative_url }}"
+                        class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
+                        alt="مهندسی و توسعه سیستم‌عامل" />
                     <!-- Softened Gradient Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-white/60 dark:from-zinc-800/60 via-transparent to-transparent"></div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-white/60 dark:from-zinc-800/60 via-transparent to-transparent">
+                    </div>
                     <!-- Accent Icon -->
-                    <div class="absolute bottom-4 right-6 w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-950/50 backdrop-blur-sm flex items-center justify-center text-amber-500 shadow-sm group-hover:rotate-3 transition-transform">
+                    <div
+                        class="absolute bottom-4 right-6 w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-950/50 backdrop-blur-sm flex items-center justify-center text-amber-500 shadow-sm group-hover:rotate-3 transition-transform">
                         <!-- Layers Icon -->
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+                            </path>
+                        </svg>
                     </div>
                 </div>
                 <!-- Card Content -->
-                <div class="p-6 pt-3 flex-grow">
-                    <h3 class="text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">مهندسی و توسعه سیستم‌عامل</h3>
-                    <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal text-sm">تسلط بر لایه‌های عمیق سیستم‌عامل و توسعه قابلیت‌های پایه.</p>
+                <div class="p-6 pt-3 flex-grow text-center">
+                    <h3
+                        class="text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                        توسعه و سفارشی‌سازی سیستم‌عامل</h3>
+                    <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal text-sm">دانش فنی بر لایه‌های
+                        عمیق سیستم‌عامل و توسعه قابلیت‌های پایه</p>
                 </div>
             </div>
 
             <!-- Card 2: Security & Stability -->
-            <div class="group flex flex-col bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 border border-zinc-100 dark:border-zinc-700 transition-all duration-300">
+            <div
+                class="group flex flex-col bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 border border-zinc-100 dark:border-zinc-700 transition-all duration-300">
                 <div class="h-56 relative overflow-hidden">
-                    <img src="{{ '/assets/images/feature-security-1.webp' | relative_url }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="امنیت و پایداری سیستم" />
+                    <img src="{{ '/assets/images/feature-security-1.webp' | relative_url }}"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        alt="امنیت و پایداری سیستم" />
                     <!-- Softened Gradient Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-white/60 dark:from-zinc-800/60 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-4 right-6 w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-950/50 backdrop-blur-sm flex items-center justify-center text-amber-500 shadow-sm group-hover:rotate-3 transition-transform">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-white/60 dark:from-zinc-800/60 via-transparent to-transparent">
+                    </div>
+                    <div
+                        class="absolute bottom-4 right-6 w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-950/50 backdrop-blur-sm flex items-center justify-center text-amber-500 shadow-sm group-hover:rotate-3 transition-transform">
                         <!-- Shield Icon -->
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                            </path>
+                        </svg>
                     </div>
                 </div>
-                <div class="p-6 pt-3 flex-grow">
-                    <h3 class="text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">امنیت و پایداری سیستم</h3>
-                    <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal text-sm">طراحی و پیاده‌سازی راهکارهای امن با تمرکز بر پایداری و قابلیت اطمینان.</p>
+                <div class="p-6 pt-3 flex-grow text-center">
+                    <h3
+                        class="text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                        امنیت و پایداری سیستم</h3>
+                    <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal text-sm">طراحی و پیاده‌سازی
+                        راهکارهای امن با تمرکز بر پایداری و قابلیت اطمینان</p>
                 </div>
             </div>
-            
+
             <!-- Card 3: HW & SW Integration -->
-            <div class="group flex flex-col bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 border border-zinc-100 dark:border-zinc-700 transition-all duration-300">
+            <div
+                class="group flex flex-col bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 border border-zinc-100 dark:border-zinc-700 transition-all duration-300">
                 <div class="h-56 relative overflow-hidden">
-                    <img src="{{ '/assets/images/feature-open-source-1.webp' | relative_url }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="یکپارچه‌سازی سخت‌افزار و نرم‌افزار" />
+                    <img src="{{ '/assets/images/feature-open-source-1.webp' | relative_url }}"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        alt="یکپارچه‌سازی سخت‌افزار و نرم‌افزار" />
                     <!-- Softened Gradient Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-white/60 dark:from-zinc-800/60 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-4 right-6 w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-950/50 backdrop-blur-sm flex items-center justify-center text-amber-500 shadow-sm group-hover:rotate-3 transition-transform">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-white/60 dark:from-zinc-800/60 via-transparent to-transparent">
+                    </div>
+                    <div
+                        class="absolute bottom-4 right-6 w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-950/50 backdrop-blur-sm flex items-center justify-center text-amber-500 shadow-sm group-hover:rotate-3 transition-transform">
                         <!-- Chip / CPU Icon -->
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z">
+                            </path>
+                        </svg>
                     </div>
                 </div>
-                <div class="p-6 pt-3 flex-grow">
-                    <h3 class="text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">یکپارچه‌سازی سخت‌افزار و نرم‌افزار</h3>
-                    <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal text-sm">هماهنگ‌سازی هوشمندانه میان سخت‌افزار و نرم‌افزار برای عملکرد بهتر.</p>
+                <div class="p-6 pt-3 flex-grow text-center">
+                    <h3
+                        class="text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                        یکپارچه‌سازی سخت‌افزار و نرم‌افزار</h3>
+                    <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal text-sm">هماهنگ‌سازی
+                        هوشمندانه میان سخت‌افزار و نرم‌افزار برای عملکرد بهتر</p>
                 </div>
             </div>
 
             <!-- Card 4: Custom Products -->
-            <div class="group flex flex-col bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 border border-zinc-100 dark:border-zinc-700 transition-all duration-300">
-                <div class="h-56 relative overflow-hidden">
-                    <img src="{{ '/assets/images/product.webp' | relative_url }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="توسعه محصول و راهکارهای اختصاصی" />
+            <div
+                class="group flex flex-col bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 border border-zinc-100 dark:border-zinc-700 transition-all duration-300">
+                <!-- Added flex items-center justify-center -->
+                <div class="h-56 relative overflow-hidden flex items-center justify-center">
+                    <!-- Changed object-cover to object-contain -->
+                    <img src="{{ '/assets/images/product.webp' | relative_url }}"
+                        class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
+                        alt="توسعه محصول و راهکارهای اختصاصی" />
                     <!-- Softened Gradient Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-white/60 dark:from-zinc-800/60 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-4 right-6 w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-950/50 backdrop-blur-sm flex items-center justify-center text-amber-500 shadow-sm group-hover:rotate-3 transition-transform">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-white/60 dark:from-zinc-800/60 via-transparent to-transparent">
+                    </div>
+                    <div
+                        class="absolute bottom-4 right-6 w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-950/50 backdrop-blur-sm flex items-center justify-center text-amber-500 shadow-sm group-hover:rotate-3 transition-transform">
                         <!-- Cube / Solution Icon -->
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                        </svg>
                     </div>
                 </div>
-                <div class="p-6 pt-3 flex-grow">
-                    <h3 class="text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">توسعه محصول و راهکارهای اختصاصی</h3>
-                    <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal text-sm">خلق محصولات نرم‌افزاری مستقل و راهکارهای متناسب با نیاز سازمان‌ها.</p>
+                <div class="p-6 pt-3 flex-grow text-center">
+                    <h3
+                        class="text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                        توسعه محصول و راهکارهای اختصاصی</h3>
+                    <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal text-sm">خلق محصولات
+                        نرم‌افزاری مستقل و راهکارهای متناسب با نیاز سازمان‌ها</p>
                 </div>
             </div>
-
         </div>
+
+
     </div>
 </section>
