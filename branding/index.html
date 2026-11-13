@@ -263,22 +263,38 @@ title: هویت بصری و نشان رایبن | RayBone
 <!-- 4. Color Palette -->
 <section class="container mx-auto px-6 py-12">
     <div class="max-w-4xl mx-auto">
-        <h3 class="text-2xl font-bold text-zinc-900 dark:text-white mb-8 text-center">پالت رنگی (Lockup)</h3>
-        <!-- ساختار گرید از ۳ ستون به ۲ ستون تغییر کرد (md:grid-cols-2) -->
+        <h3 class="text-2xl font-bold text-zinc-900 dark:text-white mb-8 text-center">پالت رنگی</h3>
+        
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 
             <!-- رنگ اول: سرمه‌ای -->
-            <div class="flex flex-col items-center">
-                <div class="w-full h-32 rounded-2xl bg-[#19365C] shadow-lg mb-4"></div>
-                <h4 class="font-bold text-zinc-900 dark:text-white">آبی سرمه‌ای</h4>
-                <p class="text-sm text-zinc-500 text-center mt-2">نماد اعتماد، تکنولوژی، قدرت و ثبات</p>
+            <div class="flex flex-col items-center group">
+                <!-- افکت هاور نرم به باکس رنگ اضافه شد -->
+                <div class="w-full h-32 rounded-2xl bg-[#19365C] shadow-lg shadow-[#19365C]/20 mb-5 transition-transform duration-300 group-hover:-translate-y-2"></div>
+                
+                <h4 class="text-lg font-bold text-zinc-900 dark:text-white mb-2">آبی سرمه‌ای</h4>
+                
+                <!-- نمایش کد رنگ -->
+                <div class="bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 px-3 py-1 rounded-lg mb-3">
+                    <span class="font-mono text-sm tracking-wider text-zinc-700 dark:text-zinc-300" dir="ltr">#19365C</span>
+                </div>
+                
+                <p class="text-sm text-zinc-500 dark:text-zinc-400 text-center">نماد اعتماد، تکنولوژی، قدرت و ثبات</p>
             </div>
 
             <!-- رنگ دوم: نارنجی -->
-            <div class="flex flex-col items-center">
-                <div class="w-full h-32 rounded-2xl bg-[#F58634] shadow-lg mb-4"></div>
-                <h4 class="font-bold text-zinc-900 dark:text-white">نارنجی</h4>
-                <p class="text-sm text-zinc-500 text-center mt-2">نماد انرژی و خلاقیت</p>
+            <div class="flex flex-col items-center group">
+                <!-- افکت هاور نرم به باکس رنگ اضافه شد -->
+                <div class="w-full h-32 rounded-2xl bg-[#F58634] shadow-lg shadow-[#F58634]/20 mb-5 transition-transform duration-300 group-hover:-translate-y-2"></div>
+                
+                <h4 class="text-lg font-bold text-zinc-900 dark:text-white mb-2">نارنجی</h4>
+                
+                <!-- نمایش کد رنگ -->
+                <div class="bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 px-3 py-1 rounded-lg mb-3">
+                    <span class="font-mono text-sm tracking-wider text-zinc-700 dark:text-zinc-300" dir="ltr">#F58634</span>
+                </div>
+                
+                <p class="text-sm text-zinc-500 dark:text-zinc-400 text-center">نماد انرژی و خلاقیت</p>
             </div>
 
         </div>
