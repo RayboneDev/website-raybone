@@ -3,3 +3,9 @@ description: The new Raybone landing page
 url: "https://raybone.ir"
 baseurl: ""
 exclude: ["Gemfile", "Gemfile.lock", "README.md", "justfile", "scripts"]
+
+
+collections:
+  blogs:
+    output: true
+    permalink: /blog/:title/

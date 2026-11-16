@@ -1,0 +1,82 @@
+---
+layout: default
+title: وبلاگ رایبُن
+permalink: /blog/
+---
+
+<div class="bg-zinc-50 dark:bg-zinc-900 min-h-screen pt-32 pb-24 relative overflow-hidden" dir="rtl">
+    
+    <!-- Background Glow Effect -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-96 bg-indigo-500/10 dark:bg-indigo-500/15 blur-[120px] -z-10 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Hero Section -->
+        <div class="text-center max-w-3xl mx-auto mb-20">
+            <br>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-zinc-900 dark:text-white mb-6 leading-tight">
+                آخرین اخبار و <span class="inline-block text-transparent bg-clip-text bg-gradient-to-l from-indigo-500 to-sky-400">مقاله‌های تخصصی</span>
+            </h1>
+            <p class="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                در وبلاگ رایبُن، تجربیات فنی، بررسی تکنولوژی‌های روز، آموزش‌های حوزه سیستم‌عامل و زیرساخت، و اخبار شرکت را با شما به اشتراک می‌گذاریم.
+            </p>
+            <br>
+        </div>
+
+        <!-- Blog Posts Grid (Dynamic Loop from _blog collection) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            {% for post in site.blogs %}
+            <!-- Dynamic Post Card -->
+            <article class="group bg-white dark:bg-zinc-800/80 backdrop-blur-sm rounded-3xl border border-zinc-200 dark:border-zinc-700/50 shadow-sm hover:shadow-xl hover:shadow-indigo-500/10 hover:-translate-y-2 transition-all duration-300 flex flex-col overflow-hidden">
+                <div class="relative h-56 overflow-hidden bg-zinc-100 dark:bg-zinc-900">
+                    <!-- تصویر داینامیک -->
+                    <img src="{{ post.image | relative_url | default: '/assets/images/placeholder.webp' }}" alt="{{ post.category }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute top-4 right-4">
+                        <!-- دسته‌بندی داینامیک -->
+                        <span class="px-3 py-1 bg-white/90 dark:bg-zinc-900/90 backdrop-blur text-indigo-600 dark:text-indigo-400 text-xs font-bold rounded-full shadow-sm">{{ post.category }}</span>
+                    </div>
+                </div>
+                <div class="p-6 sm:p-8 flex flex-col flex-grow">
+                    <div class="flex items-center gap-3 text-xs text-zinc-500 dark:text-zinc-400 mb-5">
+                        <span class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg> 
+                            <!-- تاریخ داینامیک -->
+                            {{ post.date | date: "%Y-%m-%d" }}
+                        </span>
+                        <span>•</span>
+                        <!-- زمان مطالعه داینامیک -->
+                        <span>زمان مطالعه: {{ post.read_time | default: "نامشخص" }}</span>
+                    </div>
+                    
+                    <!-- عنوان داینامیک و لینک به صفحه مقاله -->
+                    <a href="{{ post.url | relative_url }}">
+                        <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-4 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors line-clamp-2 leading-snug">
+                            {{ post.title }}
+                        </h3>
+                    </a>
+                    
+                    <!-- خلاصه داینامیک -->
+                    <p class="text-zinc-600 dark:text-zinc-400 text-sm leading-loose mb-8 line-clamp-3 text-justify flex-grow">
+                        {{ post.summary | default: post.excerpt }}
+                    </p>
+                    
+                    <div class="flex items-center justify-between mt-auto pt-5 border-t border-zinc-100 dark:border-zinc-700/50">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400 text-xs font-bold">رایبُن</div>
+                            <!-- نویسنده داینامیک -->
+                            <span class="text-sm font-medium text-zinc-700 dark:text-zinc-300">{{ post.author | default: "تیم تحریریه" }}</span>
+                        </div>
+                        <a href="{{ post.url | relative_url }}" class="text-indigo-600 dark:text-indigo-400 text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
+                            ادامه مطلب <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}
