@@ -4,7 +4,7 @@ title: "چرا سیستم‌عامل بخشی از طراحی محصول است�
 date: 2026-08-28
 categories: knowledge
 reading_time: '۶'
-image: /assets/images/knowledge2.webp
+image: /assets/images/knowledge2-v3.webp
 ---
 
 در یک محصول دیجیتال، سیستم‌عامل فقط یک نرم‌افزار پایه نیست؛ جایی است که **امنیت، عملکرد، طراحی صنعتی و تجربه کاربر** به هم می‌رسند.

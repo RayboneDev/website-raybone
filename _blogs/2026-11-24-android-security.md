@@ -5,7 +5,7 @@ permalink: /blog/android-security/
 date: 2026-11-15 10:00:00 +0330
 author: "تیم فنی"
 category: "سیستم‌عامل"
-image: "/assets/images/android.webp"
+image: "/assets/images/android-v2.webp"
 read_time: "۵ دقیقه"
 summary: "در این مقاله به بررسی عمیق لایه‌های امنیتی جدید در AOSP می‌پردازیم و نحوه تطبیق اپلیکیشن‌های سازمانی با این محدودیت‌های سخت‌گیرانه را تحلیل می‌کنیم."
 ---

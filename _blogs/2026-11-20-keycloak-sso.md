@@ -5,7 +5,7 @@ permalink: /blog/keycloak-sso/
 date: 2026-11-15 10:00:00 +0330
 author: "تیم زیرساخت"
 category: "زیرساخت"
-image: "/assets/images/sso.webp"
+image: "/assets/images/sso-v2.webp"
 read_time: "۱۸ دقیقه"
 summary: "یکپارچه‌سازی سیستم‌های احراز هویت در سازمان‌های بزرگ همیشه چالش‌برانگیز است. در این مطلب نحوه اتصال امن سرویس‌های ابری به شبکه داخلی را مرور می‌کنیم."
 ---
