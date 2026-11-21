@@ -3,7 +3,7 @@ layout: blog-post
 title: "انتشار LineageOS 24 مبتنی بر اندروید ۱۷؛ قابلیت‌ها و تغییرات"
 permalink: /blog/lineageos-24-released/
 date: 2026-10-11 10:00:00 +0330
-author: "تیم فنی"
+author: "امیرعلی اکبری"
 category: "نرم‌افزار و سیستم‌عامل"
 image: "/assets/images/lineageos-24-released.webp"
 read_time: "۵ دقیقه"
